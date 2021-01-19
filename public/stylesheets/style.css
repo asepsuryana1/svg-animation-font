@@ -1,0 +1,71 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+svg {
+  width: 100%;
+  height: 100vh;
+}
+
+#logo {
+  position:absolute;
+  animation: fill 0.5s ease forwards 3s;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 572;
+  stroke-dashoffset: 572;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2) {
+  stroke-dasharray: 655;
+  stroke-dashoffset: 655;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 655;
+  stroke-dashoffset: 655;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 430;
+  stroke-dashoffset: 430;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+#logo path:nth-child(5) {
+  stroke-dasharray: 820;
+  stroke-dashoffset: 820;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(6) {
+  stroke-dasharray: 990;
+  stroke-dashoffset: 990;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+#logo path:nth-child(7) {
+  stroke-dasharray: 655;
+  stroke-dashoffset: 655;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+#logo path:nth-child(8) {
+  stroke-dasharray: 655;
+  stroke-dashoffset: 655;
+  animation: line-anim 2s ease forwards 2.1s;
+}
+
+@keyframes line-anim {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  to{
+    fill: black;
+  }
+}
+
